@@ -1,6 +1,6 @@
 import { Product } from '../interfaces/product.js';
 import { NextFunction, Request, Response } from 'express';
-import importData from '../mock/data.json' assert { type: 'json' };
+import importData from '../mock/data.json';
 
 let data: Array<Product> = importData.furniture;
 
