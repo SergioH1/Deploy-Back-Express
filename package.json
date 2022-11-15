@@ -1,5 +1,5 @@
 {
-    "name": "week7-day1-challenge",
+    "name": "week6.server",
     "version": "1.0.0",
     "description": "modula",
     "main": "index.js",
@@ -7,11 +7,10 @@
     "scripts": {
         "start": "node dist/index.js",
         "start:dev": "cross-env PORT=7700 nodemon dist/index.js",
-        "build": "tsc",
+        "build": "tsc --watch",
         "test": "jest --watchAll --coverage",
         "test:prod": "jest --coverage",
-        "start:build": "run-p build start:dev",
-        "build:all": "tsc --watch"
+        "start:build": "run-p build start:dev"
     },
     "keywords": [],
     "author": "",
@@ -20,7 +19,6 @@
         "singleQuote": true
     },
     "dependencies": {
-        "@types/dotenv": "^8.2.0",
         "cors": "^2.8.5",
         "cross-env": "^7.0.3",
         "dotenv": "^16.0.3",

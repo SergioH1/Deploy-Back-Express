@@ -1,35 +1,50 @@
-## Week 7 - Challenge 2 Rafael Garcia
+# Serve Node-Express-TypeScrip-Jest
 
-API REST Things I already know
+## Express
 
-Crea una API REST que se conecte a un fichero JSON, para manipular recursos de tipo cosas que ya sé. El JSON tendrá una sola propiedad de tipo array, donde almacenarán objetos que representarán cosas que hemos aprendido en el bootcamp. Duplica el fichero JSON de datos para que una sea la de pruebas y otra la de producción.
+-   Framework minimalista para crear servidores Node
+    -   especialmente APIs
+    -   patron: chain of responsibility
+    -   implementado con middleware
 
-La API REST debe tener los siguientes endpoints:
+## Instalación
 
-[GET] /things -> devuelve el array de cosas que ya sé
+```shell
+npm i express @types/express
+```
 
-[GET] /things/:idThing -> devuelve una cosa que ya sé
+## Utilización
 
-[DELETE] /things/:idThing -> borra una cosa que ya sé
+### Directamente
 
-[POST] /things -> crea una cosa que ya sé (la recibe en el body)
+```ts
+import express from 'express';
 
-[PATCH] /things -> modifica una cosa que ya sé (la recibe en el body)
-Opción extra:
+const app = express();
+const port = 3800;
 
-Para iniciar la API, el programa debe mostrarle al usuario las siguientes preguntas (utiliza el paquete inquirer):
+app.get('/', (req, res) => {
+    res.send('Hello World!');
+});
 
-    ¿En qué puerto quieres que se inicie la API? (respuesta por defecto: 4000)
-    ¿Qué fichero quieres usar? (pregunta con varias opciones, una única respuesta)
-        Pruebas
-        Producción
-    ¿Quieres permitir que los clientes puedan crear, borrar y modificar? (respuesta de sí o no)
+app.listen(port, () => {
+    console.log(`Example app listening on port ${port}`);
+});
+```
 
-Utiliza el patrón de express:
+### En un server de node
 
-    server.ts
-    app.ts
-    /router
-    /controller
+-   index.ts -> http.server(app)
+-   app.ts -> export const app = express()
 
-Testear los controllers
+### Midleware
+
+-   Elementos de terceros
+
+-   Morgan: logger
+-   CORS: Cross-Origin Resource Sharing
+-   Parse.json() // incluido en Express
+
+#### Utilización
+
+app.use()

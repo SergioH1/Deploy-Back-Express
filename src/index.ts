@@ -1,11 +1,10 @@
 import http from 'http';
 import { app } from './app.js';
-import * as dotenv from 'dotenv';
+import * as dotenv from 'dotenv'; // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
 dotenv.config();
-
 import { CustomError } from './interfaces/error';
 
-const port = process.env.PORT || 7500;
+const port = process.env.PORT || 3300;
 const server = http.createServer(app);
 server.on('listening', () => {
     const addr = server.address();
