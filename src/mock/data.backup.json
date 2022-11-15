@@ -1,0 +1,69 @@
+{
+    "furniture": [
+        {
+            "id": 1,
+            "name": "Futton bed",
+            "category": "bedroom",
+            "overview": "Madera ya protegida por un barniz. Numerosos espacios de almacenamiento. Puede combinarse con otros muebles de la misma colección. Mueble montado",
+            "on_sale": true,
+            "price": "895€"
+        },
+        {
+            "id": 2,
+            "name": "Head Rest Ratan",
+            "category": "bedroom",
+            "overview": "Material ligero y muy resistente. También disponible en 90 cm. Combinable con la colección Ratán. Mueble montado. Mueble montado",
+            "on_sale": false,
+            "price": "185€"
+        },
+        {
+            "id": 3,
+            "name": "Teca Bed",
+            "category": "bedroom",
+            "overview": "Teca maciza, natural y sostenible. Madera en bruto: auténtica, natural y cálida. Para colchón de 90 x 190 cm. Mueble montado.",
+            "on_sale": true,
+            "price": "995€"
+        },
+        {
+            "id": 4,
+            "name": "Head Rest Teca",
+            "category": "bedroom",
+            "overview": "Teca maciza, natural y sostenible. Facilidad de instalación. ",
+            "on_sale": false,
+            "price": "375€"
+        },
+
+        {
+            "id": 5,
+            "name": "Teca console",
+            "category": "living room",
+            "overview": "Teca maciza, natural y sostenible. Facilidad de instalación. Se puede combinar con otros muebles de la colección.",
+            "on_sale": true,
+            "price": "325€"
+        },
+        {
+            "id": 6,
+            "name": "Palisandro console",
+            "category": "living room",
+            "overview": "Palisandro macizo, natural y sostenible. Facilidad de instalación. Se puede combinar con otros muebles de la colección.",
+            "on_sale": false,
+            "price": "995€"
+        },
+        {
+            "id": 7,
+            "name": "Sofa WoodNest",
+            "category": "living room",
+            "overview": "Patas de roble macizo. Dieño Blue Nature. Se puede combinar con otros muebles de la colección.",
+            "on_sale": false,
+            "price": "2995€"
+        },
+        {
+            "id": 8,
+            "name": "Sofa Palisandro",
+            "category": "living room",
+            "overview": "Palisandro macizo ya protegido por un barniz. Se puede combinar con otros muebles de la colección.",
+            "on_sale": true,
+            "price": "1495€"
+        }
+    ]
+}
